@@ -5,7 +5,7 @@ const router = new Router();
 
 router.get('/status', (ctx, next) => {
     ctx.body = {
-        service: 'Client Service',
+        service: 'Template Service',
         version: 'v0.1',
     };
 });
@@ -16,5 +16,5 @@ app.use(router.allowedMethods());
 const port = process.env.PORT || 3000;
 
 app.listen(port, () =>
-    console.log(`Client Service has started on port ${port}!`),
+    console.log(`Template Service has started on port ${port}!`),
 );
